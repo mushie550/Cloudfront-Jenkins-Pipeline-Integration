@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('deploy') {
             steps {            
-              sh "aws s3 sync s3://demo-cloudfront-s3-bucket0"
+              sh "aws s3 sync . s3://demo-cloudfront-s3-bucket0"
             }
         }
     }
